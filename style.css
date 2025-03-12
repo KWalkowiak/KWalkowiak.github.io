@@ -1,0 +1,111 @@
+:root{  
+    --color-1: #1f1f1f;
+    --color-2: #3777FF;
+    --accent-color: #0A0A0A;
+    --text-color: #F4F4F4;
+}
+body{
+    margin: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.linktainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+nav a:hover{
+    background-color: var(--accent-color);
+}
+nav svg{
+    fill: var(--text-color);
+}
+#navbar-active{
+    display: none;
+}
+.open-navbar, .close-navbar{
+    display: none;
+}
+@media(max-width: 480px){
+    .linktainer{
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 10;
+        width: 180px;
+
+        background-color: var(--color-1);
+        box-shadow: 5px 0 5px rgba(0, 0, 0, .25);
+        transition: .3s ease-in-out;
+    }
+    nav a{
+       box-sizing: border-box;
+       height: auto;
+       width: 100%;
+       padding: 15px 25px;
+       justify-content: flex-start;
+
+    }
+    .open-navbar, .close-navbar{
+        padding: 15px 19px;
+        display: block;
+    }
+    #navbar-active:checked ~ .linktainer{
+        left: 0;
+    }
+    #navbar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9;
+    }
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-2);
+}
+main{
+    margin: 20px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-1);
+    color: var(--text-color);
+}
+footer p{
+    margin: 10px 50px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+footer a:hover{
+    text-decoration: underline
+}
