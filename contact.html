@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Krzysztof Walkowiak">
-    <title>O mnie</title>
+    <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,15 +22,26 @@
                     <a href="index.html">Główna</a>
                     <a href="info.html">Informacje</a>
                     <a href="gallery.html">Galeria</a>
-                    <a href="about.html">O mnie</a>
-                    <a href="https://www.paderek-knurow.pl">Szkoła</a>
+                    <a href="contact.html">Kontakt</a>
+                    <a href="https://www.paderek-knurow.pl" target="_blank">Szkoła</a>
             </div>
         </nav>
         <header>
-            <h1 class="header-h1">O mnie</h1>
+            <h1 class="header-h1">Kontakt</h1>
         </header>
         <main>
-
+            <form action="#">
+                <fieldset class="contact-form">
+                    <legend>Napisz do mnie</legend>
+                    <label for="imie">Imię: </label>
+                    <input type="text" id="imie" placeholder="Jan Nowak">
+                    <label for="e-mail">E-mail: </label>
+                    <input type="email" id="e-mail" placeholder="example@mail.com">
+                    <label for="textbox"></label>
+                    <input type="submit" id="submit">
+                    <input type="reset" id="reset">
+                </fieldset>
+            </form>
         </main>
         <footer>
                 <p>
