@@ -123,6 +123,10 @@ form > * {
     font-weight: bold;
     justify-content: flex-start;
 }
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
 .contact-form input,
 .contact-form textarea{
     width: 100%;
