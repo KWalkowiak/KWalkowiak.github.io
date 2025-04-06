@@ -30,20 +30,21 @@
             <h1 class="header-h1">Kontakt</h1>
         </header>
         <main>
-            <form action="#">
-                <div class="contact-form">
-                    <legend>Napisz do mnie</legend>
+            <div class="contact-form">
+                <form action="#">
+                    <legend><h2>Napisz do mnie</h2></legend>
                     <label for="imie">Imię: </label>
-                    <input type="text" id="imie" placeholder="Jan Nowak">
+                    <input type="text" id="imie" name="imie" placeholder="Jan Nowak">
                     <label for="e-mail">E-mail: </label>
-                    <input type="email" id="e-mail" placeholder="example@mail.com">
-                    <label for="textbox"></label>
+                    <input type="email" id="e-mail" name="e-mail" placeholder="example@mail.com">
+                    <label for="messeage">Wiadomość</label> 
+                    <textarea name="messeage" id="messeage" placeholder="Twoja wiadomość"></textarea>
                     <div class="buttons">
-                        <input type="submit" id="submit">
-                        <input type="reset" id="reset">
+                        <input type="submit" id="submit" value="Wyślij">
+                        <input type="reset" id="reset" value="Wyczyść">
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </main>
         <footer>
                 <p>
