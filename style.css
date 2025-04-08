@@ -101,7 +101,7 @@ main {
 }
 form > * {
     box-sizing: border-box;
-    line-height: 2;
+    line-height: 1.75;
 }
 .contact-form{
     background-color: #FFF;
@@ -131,6 +131,16 @@ form > * {
 .contact-form textarea{
     width: 100%;
     align-self: center;
+    background-color: #dfdfdf;
+    border-color: white;
+    border-radius: 5px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #1f1f1f;
+    outline: none;
+    background-color: #FFF;
+    box-shadow: 0px 0px 2px #1f1f1f;
 }
 .buttons{
     display: flex;
@@ -141,6 +151,21 @@ form > * {
 }
 .buttons input{
     max-width: 100px;
+}
+.buttons input[type="submit"]{
+    color: #000;
+    background-color: #3c3;
+    border-color: #3a3;
+    border-width: 3px;
+}
+.buttons input[type="reset"]{
+    color: #fff;
+    background-color: #c33;
+    border-color: #a33;
+    border-width: 3px;
+}
+.buttons input:hover{
+    cursor: pointer;
 }
 footer{
     position: fixed;

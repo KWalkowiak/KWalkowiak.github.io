@@ -1,0 +1,27 @@
+# Wytyczne projektu
+1. Witryna zgodna z WCAG 2.2
+1. Tytuł strony, informacje o autorze, 
+
+
+opublikowana na GitHub
+strona główna 5 odnośników menu (o sobie, strona szkoły)
+walidacja
+
+sekcja head metadane
+spójna kolorystyka witryny
+
+prawidłowo wykorzystane znaczniki semantyczne
+
+dodany JS
+
+wykorzystanie flex i grid
+
+strona główna
+główne info o tematyce strony
+
+formularz kontaktowy - strona o sobie
+tabela
+multimedia (obrazy)
+galeria zdjęć (jako fragment strony)
+
+responsywna
