@@ -4,11 +4,19 @@
   --accent-color: #0a0a0a;
   --text-color: #f4f4f4;
 }
+html,
+body,
+.container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
 body {
-  margin: 0px;
+  background-color: #f4f4f4;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #f4f4f4;
 }
 nav {
   height: 50px;
@@ -19,7 +27,7 @@ nav {
   align-items: center;
 }
 .linktainer {
-  height: 100%;
+  height: 50px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -59,6 +67,7 @@ nav svg {
     top: 0;
     left: -100%;
     z-index: 10;
+    height: 100%;
     width: 180px;
 
     background-color: var(--color-1);
@@ -88,6 +97,17 @@ nav svg {
     right: 0;
     z-index: 9;
   }
+  main {
+    flex-grow: 1;
+    max-width: 90vw;
+    margin: 20px auto;
+    display: grid;
+    grid-template-areas: 
+    "about"
+    "form"
+    "table";
+    gap: 15px;
+  }
 }
 header {
   display: flex;
@@ -96,21 +116,38 @@ header {
   background-color: var(--color-2);
 }
 main {
-  max-width: 90%;
-  height: 50%;
+  flex-grow: 1;
+  max-width: 90vw;
   margin: 20px auto;
+  display: grid;
+  grid-template-areas: 
+  "about form"
+  "table table";
+  gap: 15px;
+}
+.aboutainer {
+  grid-area: about;
+  background-color: #fff;
+  padding: 10px;
   display: flex;
+  height: fit-content;
+  width: 300px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px #0000001a;
 }
 form > * {
   box-sizing: border-box;
   line-height: 1.75;
 }
 .contact-form {
+  grid-area: form;
   background-color: #fff;
   padding: 10px;
   display: flex;
+  height: fit-content;
   width: 300px;
   flex-direction: column;
   justify-content: center;
@@ -178,13 +215,59 @@ form > * {
 .buttons input:hover {
   cursor: pointer;
 }
-footer {
-  position: fixed;
+.tabtainer {
+  grid-area: table;
+  background-color: #fff;
+  padding: 10px;
+  height: auto;
   width: 100%;
-  height: 15%;
-  bottom: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px #0000001a;
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  background-color: #555;
+  color: var(--text-color);
+  padding: 8px 12px;
+}
+td {
+  padding: 8px 12px;
+}
+.text-td {
+  max-width:300px;
+  overflow-wrap: break-word;
+}
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+tr:nth-child(even) {
+  background-color: #ccc;
+}
+table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+footer {
+  max-height: 15%;
+  width: 100%;
   padding: 10px 0px;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: flex-start;
   background-color: var(--color-1);

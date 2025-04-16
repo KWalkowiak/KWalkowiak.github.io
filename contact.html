@@ -50,6 +50,9 @@
         <h1 class="header-h1">Kontakt</h1>
       </header>
       <main>
+        <div class="aboutainer">
+          <img src="svgs/profile-pic.jpg" alt="Profilowe" height="150px">
+        </div>
         <div class="contact-form">
           <form action="#">
             <legend><h2>Napisz do mnie</h2></legend>
@@ -65,7 +68,7 @@
             <label for="messeage">Wiadomość</label>
             <textarea
               name="messeage"
-              id="messeage"
+              id="text"
               placeholder="Twoja wiadomość"
             ></textarea>
             <div class="buttons">
@@ -73,7 +76,19 @@
               <input type="reset" id="reset" value="Wyczyść" />
             </div>
           </form>
-          <div class="display-form"></div>
+        </div>
+        <div class="tabtainer">
+          <table>
+            <thead>
+              <tr>
+                <th>Imię</th>
+                <th>E-mail</th>
+                <th>Wiadomość</th>
+              </tr>
+            </thead>
+            <tbody id="display-table">
+            </tbody>
+          </table>
         </div>
       </main>
       <footer>
