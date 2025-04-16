@@ -34,6 +34,7 @@ nav a {
   align-items: center;
   text-decoration: none;
   color: var(--text-color);
+  transition: background-color 0.25s;
 }
 nav a:hover {
   background-color: var(--accent-color);
@@ -96,6 +97,7 @@ header {
 }
 main {
   max-width: 90%;
+  height: 50%;
   margin: 20px auto;
   display: flex;
   justify-content: center;
@@ -158,12 +160,20 @@ form > * {
   background-color: #3c3;
   border-color: #3a3;
   border-width: 3px;
+  transition: background-color 0.25s;
+}
+.buttons input[type="submit"]:hover {
+  background-color: #1d1;
 }
 .buttons input[type="reset"] {
   color: #fff;
   background-color: #c33;
   border-color: #a33;
   border-width: 3px;
+  transition: background-color 0.25s;
+}
+.buttons input[type="reset"]:hover {
+  background-color: #d11;
 }
 .buttons input:hover {
   cursor: pointer;
