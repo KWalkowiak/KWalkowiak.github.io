@@ -1,49 +1,123 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Krzysztof Walkowiak">
-    <title>Informacje</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Krzysztof Walkowiak" />
+    <title>Przepis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <nav class="navbar">
-            <label for="navbar-active" class="open-navbar">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
-            </label>
-            <input type="checkbox" id="navbar-active">
-            <label id="overlay" for="navbar-active"></label>
-            <div class="linktainer">
-                <label for="navbar-active" class="close-navbar">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
-                </label>
-                    <a href="index.html">Główna</a>
-                    <a href="info.html">Informacje</a>
-                    <a href="gallery.html">Galeria</a>
-                    <a href="contact.html">Kontakt</a>
-                    <a href="https://www.paderek-knurow.pl">Szkoła</a>
-            </div>
-        </nav>
-        <header>
-            <h1 class="header-h1">Informacje</h1>
-        </header>
-        <main>
-
-        </main>
-        <footer>
-                <p>
-                    <a href="#top">Wróć na górę &uarr;</a>
-                </p>
-                <p>
-                    &copy; 2025 Krzysztof Walkowiak
-                </p>
-                <p>
-                    <a href="mailto:krzysztof.walkowiak932@gmail.com">krzysztof.walkowiak932@gmail.com</a>
-                </p>
-        </footer>
+      <nav class="navbar">
+        <label for="navbar-active" class="open-navbar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#e3e3e3"
+          >
+            <path
+              d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+            />
+          </svg>
+        </label>
+        <input type="checkbox" id="navbar-active" />
+        <label id="overlay" for="navbar-active"></label>
+        <div class="linktainer">
+          <label for="navbar-active" class="close-navbar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"
+              />
+            </svg>
+          </label>
+          <a href="index.html">Główna</a>
+          <a href="info.html">Przepis</a>
+          <a href="gallery.html">Galeria</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="https://www.paderek-knurow.pl">Szkoła</a>
+        </div>
+      </nav>
+      <header class="page-header">
+        <h1>Przepis na pizzę</h1>
+      </header>
+      <main class="main-info">
+        <article id="ingredients">
+          <h2 id="ingredients-header">Składniki</h2>
+          <ul id="ingredients-list">
+            <li>Mąka - 500g</li>
+            <li>Woda - 310g</li>
+            <li>Drożdże - 8g</li>
+            <li>Sól - 11g</li>
+            <li>Oliwa z oliwek - 6g</li>
+            <li>Dodatki - wg uznania</li>
+          </ul>
+        </article>
+        <img src="imgs/pizza_img_2.png" alt="Pizza" id="pizza-img2" />
+        <article id="instructions">
+          <h2 id="instructions-header">Sposób przygotowania</h2>
+          <ol id="steps">
+            <li>Do miski wsyp mąkę i sól i wymieszaj je ze sobą.</li>
+            <li>Do innego naczynia wlej wodę i oliwę.</li>
+            <li>W naczyniu z wodą rozpuść drożdże i odstaw na 15 minut.</li>
+            <li>Po upływie 15 minut wlej składniki mokre do suchych.</li>
+            <li>
+              Wymieszaj ciasto do uzyskania jednolitej konsystencji i zostaw pod
+              przykryciem na 30 minut.
+            </li>
+            <li>
+              Po upływie 30 minut wyrabiaj ciasto do momentu, w którym będzeisz
+              w stanie rozciągnąć je bez przerywania na tyle cienko, że
+              zobaczysz prześwitujące przez nie światło.
+            </li>
+            <li>Podziel ciasto na 4 kulki o równej masie.</li>
+            <li>
+              Kulki umieść w naoliwionych pojemnikach i pozostaw na minimum 3
+              godziny, a najlepiej na noc.
+            </li>
+            <li>
+              Po tym etapie wyrastania rozciągnij ciasto w krztałt placka i
+              nałóż dodatki.
+            </li>
+            <li>
+              Piecz pizzę w piekarniku rozgrzanym do najwyższej możliwej
+              temperatury na jednej z górnych półek, najlepiej na specjalnym
+              kamieniu, ale jeśli go nie posiadasz to sprawdzi się odwrócona
+              blacha.
+            </li>
+            <li>
+              Czas pieczenia zależy od piekarnika, pizza jest gotowa, gdy brzegi
+              będą spieczone według uznania.
+            </li>
+            <li>
+              Po wyciągnięciu z piekarnika pizzę pozostawić do ostygnięcia i
+              później pokroić. Smacznego!
+            </li>
+          </ol>
+        </article>
+      </main>
+      <footer>
+        <p>
+          <a href="#top">Wróć na górę &uarr;</a>
+        </p>
+        <p>&copy; 2025 Krzysztof Walkowiak</p>
+        <p>
+          Kontakt:
+          <a href="mailto:krzysztof.walkowiak932@gmail.com" class="contact-link"
+            >krzysztof.walkowiak932@gmail.com</a
+          >
+          lub <a href="contact.html" class="contact-link">tutaj</a>
+        </p>
+      </footer>
     </div>
-</body>
-<script src="script.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

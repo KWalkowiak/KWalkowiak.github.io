@@ -40,22 +40,29 @@
             </svg>
           </label>
           <a href="index.html">Główna</a>
-          <a href="info.html">Informacje</a>
+          <a href="info.html">Przepis</a>
           <a href="gallery.html">Galeria</a>
           <a href="contact.html">Kontakt</a>
           <a href="https://www.paderek-knurow.pl" target="_blank">Szkoła</a>
         </div>
       </nav>
-      <header>
-        <h1 class="header-h1">Kontakt</h1>
+      <header class="page-header">
+        <h1>Kontakt</h1>
       </header>
-      <main>
-        <div class="aboutainer">
-          <img src="svgs/profile-pic.jpg" alt="Profilowe" height="150px">
-        </div>
-        <div class="contact-form">
+      <main class="main-contact">
+        <article class="aboutainer">
+          <img id="profile-pic" src="imgs/profile-pic.jpg" alt="Profilowe" />
+          <section id="about-section">
+            Nazywam się Krzysztof Walkowiak i uczę się w Zespole Szkół im. I. J.
+            Paderewskiego w Knurowie. Jestem w zawodzie technik-informatyk i
+            poza techniczną zajawką lubię gotować coś dobrego. Mam nadzieję, że
+            mój przepisz na klasyczne włoskie danie jakim jest pizza Ci się
+            spodoba.
+          </section>
+        </article>
+        <article class="contact-form">
           <form action="#">
-            <legend><h2>Napisz do mnie</h2></legend>
+            <header><h2>Napisz do mnie</h2></header>
             <label for="imie">Imię: </label>
             <input type="text" id="imie" name="imie" placeholder="Jan Nowak" />
             <label for="e-mail">E-mail: </label>
@@ -65,7 +72,7 @@
               name="e-mail"
               placeholder="example@mail.com"
             />
-            <label for="messeage">Wiadomość</label>
+            <label for="text">Wiadomość</label>
             <textarea
               name="messeage"
               id="text"
@@ -76,20 +83,20 @@
               <input type="reset" id="reset" value="Wyczyść" />
             </div>
           </form>
-        </div>
-        <div class="tabtainer">
+        </article>
+        <article class="tabtainer">
           <table>
             <thead>
               <tr>
                 <th>Imię</th>
                 <th>E-mail</th>
-                <th>Wiadomość</th>
+                <th class="text-td">Wiadomość</th>
               </tr>
             </thead>
-            <tbody id="display-table">
-            </tbody>
+            <tbody id="display-table"></tbody>
           </table>
-        </div>
+          <button id="tabclear">Wyczyść</button>
+        </article>
       </main>
       <footer>
         <p>
@@ -97,12 +104,14 @@
         </p>
         <p>&copy; 2025 Krzysztof Walkowiak</p>
         <p>
-          <a href="mailto:krzysztof.walkowiak932@gmail.com"
+          Kontakt:
+          <a href="mailto:krzysztof.walkowiak932@gmail.com" class="contact-link"
             >krzysztof.walkowiak932@gmail.com</a
           >
+          lub <a href="contact.html" class="contact-link">tutaj</a>
         </p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
