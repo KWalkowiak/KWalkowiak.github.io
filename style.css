@@ -2,7 +2,9 @@
   --color-1: #1f1f1f;
   --color-2: #3777ff;
   --accent-color: #0a0a0a;
-  --text-color: #f4f4f4;
+  --text-color: #fff;
+  --background-color: #f0f0f0;
+  --block-background-color: #f7f7f7;
 }
 html,
 body,
@@ -14,7 +16,7 @@ body,
   flex-direction: column;
 }
 body {
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
   font-family: "Roboto", sans-serif;
 }
 nav {
@@ -79,6 +81,7 @@ main {
   gap: 15px;
 }
 .main-gallery {
+  margin: 20px auto;
   display: grid;
   place-items: center;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
@@ -93,7 +96,7 @@ main {
   gap: 15px;
 }
 .article-index {
-  background-color: #fff;
+  background-color: var(--block-background-color);
   padding: 10px;
   display: flex;
   height: fit-content;
@@ -112,12 +115,13 @@ main {
   margin: 0.67em 0;
 }
 #pizza-img1 {
-  width: 768px;
+  width: 600px;
   height: auto;
+  margin: 20px 40px;
   border-radius: 10px;
 }
 .section-index {
-  max-width: 770px;
+  max-width: 512px;
   font-size: 1.2rem;
   font-weight: 350;
   padding: 1.3rem;
@@ -130,12 +134,13 @@ main {
   text-decoration: none;
   color: var(--text-color);
   background-color: var(--color-2);
+  margin: 1.1rem;
   padding: 1.1rem;
   border-radius: 10px;
 }
 #ingredients {
   grid-area: ingredients;
-  background-color: #fff;
+  background-color: var(--block-background-color);
   padding: 10px;
   height: fit-content;
   width: 300px;
@@ -149,10 +154,16 @@ main {
 #ingredients-header {
   font-size: 2rem;
   margin: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 #ingredients-list {
   text-align: justify;
-  padding: 5px;
+  margin: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  line-height: 1.5;
   font-size: 1.2rem;
   font-weight: 350;
 }
@@ -163,7 +174,7 @@ main {
 }
 #instructions {
   grid-area: instructions;
-  background-color: #fff;
+  background-color: var(--block-background-color);
   padding: 10px;
   height: fit-content;
   max-width: 635px;
@@ -174,16 +185,16 @@ main {
   box-shadow: 0px 4px 10px #0000001a;
 }
 #instructions-header {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 #steps {
   width: 90%;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.75;
 }
 .fig-gallery {
-  background-color: #fff;
+  background-color: var(--block-background-color);
   margin: 0;
   padding: 10px;
   display: flex;
@@ -200,12 +211,12 @@ main {
   font-size: 1.25rem;
   font-weight: 350;
   text-align: center;
-  padding: 10px;
+  margin: 10px;
 }
 .img-gallery {
   width: 350px;
   height: auto;
-  padding: 10px;
+  margin: auto 10px;
   border-radius: 20px;
 }
 #fig1 {
@@ -225,7 +236,7 @@ main {
 }
 .aboutainer {
   grid-area: about;
-  background-color: #fff;
+  background-color: var(--block-background-color);
   padding: 10px;
   height: 444px;
   width: 300px;
@@ -243,7 +254,9 @@ main {
 }
 #about-section {
   text-align: justify;
+  margin: 10px;
   padding: 5px;
+  line-height: 1.25;
   font-size: 1.2rem;
   font-weight: 350;
 }
@@ -253,7 +266,7 @@ form > * {
 }
 .contact-form {
   grid-area: form;
-  background-color: #fff;
+  background-color: var(--block-background-color);
   padding: 10px;
   display: flex;
   height: 444px;
@@ -282,7 +295,7 @@ form > * {
   width: 100%;
   align-self: center;
   background-color: #dfdfdf;
-  border-color: white;
+  border-color: #fff;
   border-radius: 5px;
 }
 .contact-form input:focus,
@@ -326,7 +339,7 @@ form > * {
 }
 .tabtainer {
   grid-area: table;
-  background-color: #fff;
+  background-color: var(--block-background-color);
   padding: 10px;
   height: auto;
   width: 100%;
@@ -339,10 +352,12 @@ form > * {
   overflow-x: auto;
 }
 table {
+  width: 85%;
   border-collapse: separate;
   border-spacing: 0;
   border-radius: 10px;
   overflow: hidden;
+  text-align: center;
 }
 th {
   background-color: #555;
